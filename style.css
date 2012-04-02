@@ -6,11 +6,9 @@ body
 	font: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	color: #061C37;
-	background-color: #FCFBEF;
-	background-image:url(images/background.png);
-	background-repeat:repeat-x;
-
+	background-color:black;
 }
+
 *
 {
 	margin: 0 auto 0 auto;
@@ -70,7 +68,8 @@ body
 #content
 {
 	width:880px;
-	height:auto;
+	/*height:auto;*/
+	min-height: 500px;
 	background-color:#FFF;
 	padding-left:10px;
 	padding-right:10px;
@@ -92,9 +91,9 @@ body
 
 a,a:visited
 {
-/*	color:#E4CA10;*/
 	color:#061C37;
-/*	text-decoration:none;*/
+/*	color:#E4CA10;
+	text-decoration:none;*/
 	font-weight:bold;
 }
 
@@ -148,3 +147,26 @@ p
 	text-align: left;
 }
 
+#wrapper {
+	width: 380px;
+	margin-left: 3px;
+	margin-right: auto;
+	}
+ 
+.accordionButton {	
+	width: 380px;
+	float: left;
+	clear: right;
+	background:black;
+	color:white;
+	border-bottom: 1px solid #FFFFFF;
+	cursor: pointer;
+	}
+ 
+.accordionContent {	
+	width: 380px;
+	float: left;
+	background: gray;
+	display: none;
+	margin-left: 3px;
+}

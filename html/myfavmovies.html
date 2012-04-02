@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../style.css" />
+<title>>My All Time Favorite Movies</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"> </script>
+<script type="text/javascript">
+	$(document).ready(function() {
+ 
+		//ACCORDION BUTTON ACTION	
+		$('div.accordionButton').click(function() {
+/*		$('div.accordionContent').slideUp('normal');	*/
+		$(this).next().slideDown('normal');
+		});
+ 
+		//HIDE THE DIVS ON PAGE LOAD	
+		$("div.accordionContent").hide();
+ 
+	});
+</script>
+</head>
+
+<body>
+<div id="container">
+		<div id="mainpic">
+        	<h1>Pinakin<span class="lighter">Mistry</span></h1>
+            <h2>My First GitHub Page</h2>
+        </div>   
+        
+        <div id="menu">
+        	<ul>
+            	<li class="menuitem"><a href="../index.html" title="Home Page">Home Page</a></li>
+				<li class="menuitem"><a href="aboutme.html" title="Something Awesome Inside">About Me </a></li>
+				<li class="menuitem"><a href="latestblogs.html" title="My Latest Blogs">Latest Blogs </a></li>
+				<li class="menuitem"><a href="mypreviousblogs.html" title="My Previous Blogs">Previous Blogs </a></li>
+				<li class="menuitem"><a href="myfavmovies.html" title="My Favorite Movies">Movies </a></li>
+            </ul>
+        </div>
+        
+		<div id="content">
+        	<h3>List of my all time favorite movies based on genre. You must watch these. Trust me!</h3>
+        	<p>&nbsp;</p>
+				
+			<div id="wrapper">
+				<div class="accordionButton"><b>Inspiring</b></div>
+				<div class="accordionContent">
+					<a target="_blank" href="http://en.wikipedia.org/wiki/Flight_of_Pheonix" >Flight Of Pheonix</a><br>
+					<a target="_blank" href="http://en.wikipedia.org/wiki/The_Terminal" >The Terminal</a><br>
+					<a target="_blank" href="http://en.wikipedia.org/wiki/U-571_%28film%29" >U-571</a><br>
+					
+				</div>
+				
+				<div class="accordionButton"><b>Triller</b></div>
+				<div class="accordionContent">
+					<a target="_blank" href="http://en.wikipedia.org/wiki/Inside_man" >Inside Man</a><br>
+					<a target="_blank" href="http://en.wikipedia.org/wiki/Inception" >Inception</a><br>
+					<a target="_blank" href="http://en.wikipedia.org/wiki/The_Bank_Job" >The Bank Job</a><br>
+				</div>
+				
+				<div class="accordionButton"><b>Horror</b></div>
+				<div class="accordionContent">
+					<a target="_blank" href="http://en.wikipedia.org/wiki/Insidious_%28film%29" >Insidious</a><br>
+					<a target="_blank" href="http://en.wikipedia.org/wiki/Paranormal_activity" >Paranormal Activity</a><br>
+					<a target="_blank" href="http://en.wikipedia.org/wiki/Exorcism_of_emily_rose" >Exorcism of Emily Rose</a><br>
+				</div>
+				
+				<div class="accordionButton"><b>Animation</b></div>
+				<div class="accordionContent">
+					<a target="_blank" href="http://en.wikipedia.org/wiki/Despicable_Me" >Despicible Me</a><br>
+					<a target="_blank" href="http://en.wikipedia.org/wiki/Avatar_%282009_film%29" >Avatar</a><br>
+				</div>
+			</div>
+						
+      </div>
+   </div>
+</body>
+</html>

@@ -4,6 +4,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" type="text/css" href="style.css" />
 <title>>Welcome to Pinakin's GitHub Home Page</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"> </script>
+<script type="text/javascript">
+	$(document).ready(function() {
+ 
+		//ACCORDION BUTTON ACTION	
+		$('div.accordionButton').click(function() {
+		//$('div.accordionContent').slideUp('normal');
+		$(this).next().slideDown('normal');
+		});
+ 
+		//HIDE THE DIVS ON PAGE LOAD	
+		$("div.accordionContent").hide();
+ 
+	});
+</script>
 </head>
 
 <body>
@@ -16,9 +31,10 @@
         <div id="menu">
         	<ul>
             	<li class="menuitem"><a href="index.html" title="Home Page">Home Page</a></li>
-				<li class="menuitem"><a href="html/aboutme.html" title="About Me">About Me </a></li>
+				<li class="menuitem"><a href="html/aboutme.html" title="Something Awesome Inside">About Me </a></li>
 				<li class="menuitem"><a href="html/latestblogs.html" title="My Latest Blogs">Latest Blogs </a></li>
 				<li class="menuitem"><a href="html/mypreviousblogs.html" title="My Previous Blogs">Previous Blogs </a></li>
+				<li class="menuitem"><a href="html/myfavmovies.html" title="My Favorite Movies">Movies </a></li>
             </ul>
         </div>
         
@@ -28,19 +44,46 @@
         	<p>&nbsp;</p>
 			<h3>Here is what you can do:</h3>
 			<p>&nbsp;</p>
-        	<ul>
+        <!--	<ul>
 				<li>You can read about me.</li>
 				<li>You can read my latest and previous blogs.</li>
 				<li>You can add comments on my blogs.</li>
 				<li>You can send a tweet about my blog.<img src="images/tweet.jpeg" height="40" width="40/"></li>
 				<li>You can let me know that you liked my blog.<img src="images/fblike.jpeg" height="40" width="40/"></li>
 			</ul>
-            <p>&nbsp;</p>
-        	<p>&nbsp;</p>
-        	<p>&nbsp;</p>
-<p>&nbsp;</p>
-            
-            
+		-->
+				
+			<div id="wrapper">
+				<div class="accordionButton"><b>Read About Me</b></div>
+				<div class="accordionContent">
+					<a href="html/aboutme.html" title="I am sure you will enjoy it a lot!">It's About Me And My Awesome Coincidence</a>
+				</div>
+				
+				<div class="accordionButton"><b>Read My Latest Blogs</b></div>
+				<div class="accordionContent">
+					<a href="html/latestblogs.html" title="This is just the beginning!">Blogs Are To Express Yourself</a>
+				</div>
+				
+				<div class="accordionButton"><b>Read My Previous Blogs</b></div>
+				<div class="accordionContent">
+					<a href="html/mypreviousblogs.html" title="Retain your previous work!">Some Of My Previous Blogs</a>
+				</div>
+				
+				<div class="accordionButton"><b>There's More You Can Do Here</b></div>
+				<div class="accordionContent">
+						<b>
+						You can get social with me. Here's how:<br>
+						Like My Blogs Thru Facebook.<br>
+						Tweet About My Blogs.<br>
+						Comment/Discuss On My Blogs/Work.<br>
+						</b>
+				</div>
+				<div class="accordionButton"><b>List Of My All Time Favorite Movies</b></div>
+				<div class="accordionContent">
+						<a href="html/myfavmovies.html" title="Trust Me!">These Are Movies You Must Watch</a>
+				</div>
+			</div>
+			
       </div>
    </div>
 </body>
