@@ -105,6 +105,7 @@
         Authorize Analytics</button>
 
   <!-- Div element where the Line Chart will be placed -->
+  <div id='column-chart-example'></div>
   <div id='line-chart-example'></div>
 
   <!-- Load all Google JS libraries -->
@@ -127,12 +128,30 @@
     // visualizes in a line chart.
     var chart1 = new gadash.Chart({
       'type': 'ColumnChart',
+      'divContainer': 'column-chart-example',
+      'last-n-days':30,
+      'query': {
+        'ids': 'ga:63986422',
+        'metrics': 'ga:visitors',
+        'dimensions': 'ga:region'
+      },
+      'chartOptions': {
+        height:600,
+        title: 'Visits in January 2011',
+        hAxis: {title:'Date'},
+        vAxis: {title:'Visits'},
+        curveType: 'function'
+      }
+    }).render();
+
+    var chart2 = new gadash.Chart({
+      'type': 'LineChart',
       'divContainer': 'line-chart-example',
       'last-n-days':30,
       'query': {
         'ids': 'ga:63986422',
         'metrics': 'ga:visits',
-        'dimensions': 'ga:region,ga:visitLength'
+        'dimensions': 'ga:visitLength'
       },
       'chartOptions': {
         height:600,
