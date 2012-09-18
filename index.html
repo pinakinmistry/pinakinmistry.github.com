@@ -150,14 +150,14 @@
       'last-n-days':30,
       'query': {
         'ids': 'ga:63986422',
-        'metrics': 'ga:visits,ga:visits',
+        'metrics': 'ga:visits,ga:visitors',
         'dimensions': 'ga:date'
       },
       'chartOptions': {
         height:600,
         title: 'Visits vs Date',
         hAxis: {title:'Date'},
-        vAxis: {title:['Visits','Visitors']},
+        vAxis: {title:'Visits and Unique Visitors'},
         curveType: 'function'
       }
     }).render();
