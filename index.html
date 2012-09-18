@@ -107,6 +107,7 @@
   <!-- Div element where the Line Chart will be placed -->
   <div id='column-chart-example'></div>
   <div id='line-chart-example'></div>
+  <div id='avg-time-region'></div>
 
   <!-- Load all Google JS libraries -->
   <script src="https://www.google.com/jsapi"></script>
@@ -132,12 +133,12 @@
       'last-n-days':10,
       'query': {
         'ids': 'ga:63986422',
-        'metrics': 'ga:visitors,ga:avgTimeOnSite',
+        'metrics': 'ga:visitors',
         'dimensions': 'ga:region'
       },
       'chartOptions': {
         height:400,
-        title: 'Visitors And Avg. Visit Time vs Regions',
+        title: 'Visitors vs Regions',
         hAxis: {title:'Visitors'},
         vAxis: {title:'Regions'},
         curveType: 'function'
@@ -161,6 +162,26 @@
         curveType: 'function'
       }
     }).render();
+
+    var chart3 = new gadash.Chart({
+      'type': 'BarChart',
+      'divContainer': 'avg-time-region',
+      'last-n-days':10,
+      'query': {
+        'ids': 'ga:63986422',
+        'metrics': 'ga:avgTimeOnSite',
+        'dimensions': 'ga:region'
+      },
+      'chartOptions': {
+        height:400,
+        title: 'Avg. Visit Time vs Regions',
+        hAxis: {title:'Avg. Visit Time'},
+        vAxis: {title:'Regions'},
+        curveType: 'function'
+      }
+    }).render();
+
+
   </script>
 
 </body>
