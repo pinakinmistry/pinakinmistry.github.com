@@ -164,13 +164,13 @@
     }).render();
 
     var chart3 = new gadash.Chart({
-      'type': 'LineChart',
+      'type': 'BarChart',
       'divContainer': 'avg-time-region',
       'last-n-days':10,
       'query': {
         'ids': 'ga:63986422',
         'metrics': 'ga:avgTimeOnSite',
-        'dimensions': 'ga:date'
+        'dimensions': 'ga:region'
       },
       'chartOptions': {
         height:400,
