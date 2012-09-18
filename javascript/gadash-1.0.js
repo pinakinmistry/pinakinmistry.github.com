@@ -217,7 +217,8 @@ gadash.Chart.prototype.set = function(config) {
 gadash.Chart.prototype.render = function() {
 
   // If the client library has loaded.
-  if (gapi.client.analytics) {
+  //if (gapi.client.analytics) {
+    if(typeof gapi.client != 'undefined'){ //new code
     this.renderFunction();
   } else {
     var renderFunction = gadash.util.bindMethod(this, this.renderFunction);
