@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'OpenSansCondLight';
+  src: url('fonts/OpenSans-CondLight.ttf');
+}
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -17,8 +23,8 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 
 body {
   background-color: #222;
-  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
-  font-size: 18px;
+  font-family: 'OpenSansCondLight', "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
+  font-size: 22px;
   color: #fff;
 }
 
@@ -37,6 +43,10 @@ header {
   margin: auto;
 }
 
+.intro {
+  letter-spacing: 1px;
+}
+
 .wrapper {
   position: relative;
   top: 45px;
@@ -47,8 +57,7 @@ header {
 }
 
 .name {
-  font-size: 22px;
-  font: ivory; 
+  color: #ff0;
 }
 
 .photu {
