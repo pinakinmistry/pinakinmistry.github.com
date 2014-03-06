@@ -66,7 +66,32 @@ header {
 }
 
 .photu {
+  position: relative;
   vertical-align: middle;
+  cursor: pointer;
+  transition: all .3s linear;
+  -webkit-transition: all .3s linear;
+  -moz-transition: all .3s linear;
+  -ms-transition: all .3s linear;
+  -o-transition: all .3s linear;
+}
+
+.photu:hover {
+  top: 20px;
+  transform: scale(2);
+  -webkit-transform: scale(2);
+  -moz-transform: scale(2);
+  -ms-transform: scale(2);
+  -o-transform: scale(2);
+}
+
+@keyframes rotateY {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
 }
 
 @-webkit-keyframes rotateY {
@@ -78,9 +103,41 @@ header {
     }
 }
 
+@-moz-keyframes rotateY {
+    from{
+        -moz-transform: rotateY(0deg);
+    }
+    to{
+        -moz-transform: rotateY(360deg);
+    }
+}
+
+@-ms-keyframes rotateY {
+    from{
+        -ms-transform: rotateY(0deg);
+    }
+    to{
+        -ms-transform: rotateY(360deg);
+    }
+}
+
+@-o-keyframes rotateY {
+    from{
+        -o-transform: rotateY(0deg);
+    }
+    to{
+        -o-transform: rotateY(360deg);
+    }
+}
+
+
 .rotateY {
     display: inline-block;
+    animation: rotateY 3s linear infinite;
     -webkit-animation: rotateY 3s linear infinite;
+    -moz-animation: rotateY 3s linear infinite;
+    -ms-animation: rotateY 3s linear infinite;
+    -o-animation: rotateY 3s linear infinite;
 }
 
 .sectionTitle {
