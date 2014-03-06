@@ -1,188 +1,79 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="style.css" />
-<title>>Welcome to Pinakin's GitHub Home Page</title>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"> </script>
-<script type="text/javascript">
-	$(document).ready(function() {
- 
-		//ACCORDION BUTTON ACTION	
-		$('div.accordionButton').click(function() {
-		//$('div.accordionContent').slideUp('normal');
-		$(this).next().slideDown('normal');
-		});
- 
-		//HIDE THE DIVS ON PAGE LOAD	
-		$("div.accordionContent").hide();
- 
-	});
-</script>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-34789720-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+  <meta charset="utf-8">
+  <title>Pinakin Mistry</title>
+  <link rel="stylesheet" href="css/app.css"/>
+  <link rel="stylesheet" href="css/jquery-jvectormap.css"/>
 </head>
-
 <body>
-<div id="container">
-		<div id="mainpic">
-        	<h1>Pinakin<span class="lighter">Mistry</span></h1>
-            <h2>My First GitHub Page</h2>
-        </div>   
-        
-        <div id="menu">
-        	<ul>
-            	<li class="menuitem"><a href="index.html" title="Home Page">Home Page</a></li>
-				<li class="menuitem"><a href="html/aboutme.html" title="Something Awesome Inside">About Me </a></li>
-				<li class="menuitem"><a href="html/latestblogs.html" title="My Latest Blogs">Latest Blogs </a></li>
-				<li class="menuitem"><a href="html/mypreviousblogs.html" title="My Previous Blogs">Previous Blogs </a></li>
-				<li class="menuitem"><a href="html/myfavmovies.html" title="My Favorite Movies">Movies </a></li>
-            </ul>
-        </div>
-        
-		<div id="content">
-        	<h2>Welcome to my Home Page on GitHub!!!</h2>
-        	<p>&nbsp;</p>
-        	<p>&nbsp;</p>
-			<h3>Here is what you can do:</h3>
-			<p>&nbsp;</p>
-        <!--	<ul>
-				<li>You can read about me.</li>
-				<li>You can read my latest and previous blogs.</li>
-				<li>You can add comments on my blogs.</li>
-				<li>You can send a tweet about my blog.<img src="images/tweet.jpeg" height="40" width="40/"></li>
-				<li>You can let me know that you liked my blog.<img src="images/fblike.jpeg" height="40" width="40/"></li>
-			</ul>
-		-->
-				
-			<div id="wrapper">
-				<div class="accordionButton"><b>Read About Me</b></div>
-				<div class="accordionContent">
-					<a href="html/aboutme.html" title="I am sure you will enjoy it a lot!">It's About Me And My Awesome Coincidence</a>
-				</div>
-				
-				<div class="accordionButton"><b>Read My Latest Blogs</b></div>
-				<div class="accordionContent">
-					<a href="html/latestblogs.html" title="This is just the beginning!">Blogs Are To Express Yourself</a>
-				</div>
-				
-				<div class="accordionButton"><b>Read My Previous Blogs</b></div>
-				<div class="accordionContent">
-					<a href="html/mypreviousblogs.html" title="Retain your previous work!">Some Of My Previous Blogs</a>
-				</div>
-				
-				<div class="accordionButton"><b>There's More You Can Do Here</b></div>
-				<div class="accordionContent">
-						<b>
-						You can get social with me. Here's how:<br>
-						Like My Blogs Thru Facebook.<br>
-						Tweet About My Blogs.<br>
-						Comment/Discuss On My Blogs/Work.<br>
-						</b>
-				</div>
-				<div class="accordionButton"><b>List Of My All Time Favorite Movies</b></div>
-				<div class="accordionContent">
-						<a href="html/myfavmovies.html" title="Trust Me!">These Are Movies You Must Watch</a>
-				</div>
-			</div>
-			
-      </div>
-   </div>
+  <header>
+  	<div class="container">
+  		<div class="floatRight">
+		  	<span class="name">Pinakin Mis<span class="rotateY">T</span>ry</span>
+		  	<img src="img/pinakin.png" width="40" height="40" class="photu"/>
+		  </div>
+	  </div>
+  </header>
+  <div class="wrapper">
+	  <div class="container">
+	  	<div class="sectionTitle marginTop">Reusable Charts:</div>
+	  	<div class="iframeWrap">
+	  		<a href="http://pinakinmistry.github.io/presentations/ffjavascript" 
+	  			target="_blank" class="coverLink">
+	  		</a>
+		  	<iframe src="http://pinakinmistry.github.io/presentations/ffjavascript">
+		  	</iframe>
+		  </div>
+		  <div class="iframeWrap">
+	  		<a href="http://pinakinmistry.github.io/presentations/javascriptpower" 
+	  			target="_blank" class="coverLink">
+	  		</a>
+		  	<iframe src="http://pinakinmistry.github.io/presentations/javascriptpower">
+		  	</iframe>
+		  </div>
+		  <div class="iframeWrap">
+	  		<a href="http://pinakinmistry.github.io/presentations/oojavascript" 
+	  			target="_blank" class="coverLink">
+	  		</a>
+		  	<iframe src="http://pinakinmistry.github.io/presentations/oojavascript">
+		  	</iframe>
+		  </div>
+	  	
+	  	<div class="sectionTitle">Presentations:</div>
+	  	<div class="iframeWrap">
+	  		<a href="http://pinakinmistry.github.io/presentations/ffjavascript" 
+	  			target="_blank" class="coverLink">
+	  		</a>
+		  	<iframe src="http://pinakinmistry.github.io/presentations/ffjavascript">
+		  	</iframe>
+		  </div>
+		  <div class="iframeWrap">
+	  		<a href="http://pinakinmistry.github.io/presentations/javascriptpower" 
+	  			target="_blank" class="coverLink">
+	  		</a>
+		  	<iframe src="http://pinakinmistry.github.io/presentations/javascriptpower">
+		  	</iframe>
+		  </div>
+		  <div class="iframeWrap">
+	  		<a href="http://pinakinmistry.github.io/presentations/oojavascript" 
+	  			target="_blank" class="coverLink">
+	  		</a>
+		  	<iframe src="http://pinakinmistry.github.io/presentations/oojavascript">
+		  	</iframe>
+		  </div>
 
-   <!-- Add Google Analytics authorization button -->
-  <button id="authorize-button" style="visibility: hidden">
-        Authorize Analytics</button>
+		  <div class="sectionTitle marginTop">Apps:</div>
+	  	<div class="iframeWrap">
+	  		<a href="http://becomingguru.github.io/sachin-angular-phonegap/dist/#/" 
+	  			target="_blank" class="coverLink">
+	  		</a>
+		  	<iframe src="http://becomingguru.github.io/sachin-angular-phonegap/dist/#/">
+		  	</iframe>
+		  </div>
 
-  <!-- Div element where the Line Chart will be placed -->
-  <div id='column-chart-example'></div>
-  <div id='line-chart-example'></div>
-  <div id='avg-time-region'></div>
-
-  <!-- Load all Google JS libraries -->
-  <script src="https://www.google.com/jsapi"></script>
-  <script src="javascript/gadash-1.0.js"></script>
-  <script src="https://apis.google.com/js/client.js?onload=gadashInit"></script>
-  <script>
-    // Configure these parameters before you start.
-    var API_KEY = 'AIzaSyCd5hXOJFiIgu8mX1yQtKAC-TGwXBlgTMI';
-    var CLIENT_ID = '992746470519.apps.googleusercontent.com';
-    var TABLE_ID = 'ga:63986422';
-    // Format of table ID is ga:xxx where xxx is the profile ID.
-
-    gadash.configKeys({
-      'apiKey': 'AIzaSyCd5hXOJFiIgu8mX1yQtKAC-TGwXBlgTMI',
-      'clientId': '992746470519.apps.googleusercontent.com'
-    });
-
-    // Create a new Chart that queries visitors for the last 30 days and plots
-    // visualizes in a line chart.
-    var chart1 = new gadash.Chart({
-      'type': 'BarChart',
-      'divContainer': 'column-chart-example',
-      'last-n-days':10,
-      'query': {
-        'ids': 'ga:63986422',
-        'metrics': 'ga:visitors',
-        'dimensions': 'ga:region'
-      },
-      'chartOptions': {
-        height:400,
-        title: 'Visitors vs Regions',
-        hAxis: {title:'Visitors'},
-        vAxis: {title:'Regions'},
-        curveType: 'function'
-      }
-    }).render();
-
-    var chart2 = new gadash.Chart({
-      'type': 'LineChart',
-      'divContainer': 'line-chart-example',
-      'last-n-days':10,
-      'query': {
-        'ids': 'ga:63986422',
-        'metrics': 'ga:visits,ga:visitors',
-        'dimensions': 'ga:date'
-      },
-      'chartOptions': {
-        height:400,
-        title: 'Visits and Unique Visitors vs Date',
-        hAxis: {title:'Date'},
-        vAxis: {title:'Visits and Unique Visitors'},
-        curveType: 'function'
-      }
-    }).render();
-
-    var chart3 = new gadash.Chart({
-      'type': 'BarChart',
-      'divContainer': 'avg-time-region',
-      'last-n-days':10,
-      'query': {
-        'ids': 'ga:63986422',
-        'metrics': 'ga:avgTimeOnSite',
-        'dimensions': 'ga:region'
-      },
-      'chartOptions': {
-        height:400,
-        title: 'Avg. Visit Time vs Regions',
-        hAxis: {title:'Avg. Visit Time'},
-        vAxis: {title:'Regions'},
-        curveType: 'function'
-      }
-    }).render();
-
-
-  </script>
-
+	  	
+	  </div>
+	</div>
 </body>
 </html>

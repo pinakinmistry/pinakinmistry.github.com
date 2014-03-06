@@ -1,1 +1,0 @@
-[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/d189e01b91395364c39eb8e62cb2357e "githalytics.com")](http://githalytics.com/pinakinmistry/pinakinmistry.github.com.git)
