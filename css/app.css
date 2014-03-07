@@ -1,11 +1,11 @@
 @font-face {
-    font-family: 'OpenSansCondLight';
-    src: url('fonts/OpenSans-CondLight-webfont.eot');
-    src: url('fonts/OpenSans-CondLight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/OpenSans-CondLight-webfont.woff') format('woff'),
-         url('fonts/OpenSans-CondLight-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'OpenSansCondLight';
+  src: url('fonts/OpenSans-CondLight-webfont.eot');
+  src: url('fonts/OpenSans-CondLight-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/OpenSans-CondLight-webfont.woff') format('woff'),
+       url('fonts/OpenSans-CondLight-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 
 }
 
@@ -66,6 +66,11 @@ header {
 .floatRight {
   float: right;
   margin-right: 5px;
+}
+
+.stickRight {
+  position: absolute;
+  top:0; right: 0;
 }
 
 .name {
