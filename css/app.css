@@ -1,7 +1,14 @@
 @font-face {
-  font-family: 'OpenSansCondLight';
-  src: url('fonts/OpenSans-CondLight.ttf');
+    font-family: 'OpenSansCondLight';
+    src: url('fonts/OpenSans-CondLight-webfont.eot');
+    src: url('fonts/OpenSans-CondLight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-CondLight-webfont.woff') format('woff'),
+         url('fonts/OpenSans-CondLight-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
 }
+
 
 
 html, body, div, span, applet, object, iframe,
