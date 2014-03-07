@@ -52,7 +52,6 @@ header {
 }
 
 .intro {
-  width: 700px;
   letter-spacing: 1px;
   line-height: 36px;
   display: inline-block;
@@ -165,12 +164,12 @@ header {
 
 .iframeWrap {
   position: relative;
-  width: 324px;
+  width: 334px;
   height: 200px;
-  border: 5px solid #444;
   margin: 0 7px 7px 0;
   float: left;
   position: relative;
+  background: #9e99c4;
   overflow: hidden;
 }
 
@@ -192,7 +191,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  background: white;
+  background: #9e99c4;
   -webkit-transform: scale(0.34);
   -ms-transform: scale(0.34);
   -o-transform: scale(0.34);
