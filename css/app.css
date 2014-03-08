@@ -9,8 +9,6 @@
 
 }
 
-
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -173,7 +171,6 @@ header {
   overflow: hidden;
 }
 
-
 .coverLink {
   position: absolute;
   top: 0;
@@ -203,4 +200,15 @@ header {
   -webkit-transition: opacity 0.4s ease;
   -o-transition: opacity 0.4s ease;
   transition: opacity 0.4s ease;
+}
+
+.frameTitle {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: rgba(0,0,0,.8);
+  padding: 5px;
+  text-align: center;
+  color: lightskyblue;
+  text-transform: capitalize;
 }
