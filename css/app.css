@@ -157,13 +157,12 @@ header {
 
 .sectionTitle {
   width: 100%;
-  position: relative;
+  display: inline-block;
   margin-top: 15px;
   padding: 5px;
   font-size: 26px;
   letter-spacing: 1px;
   color: #000;
-  float: left;
 }
 
 .iframeWrap {
@@ -349,4 +348,16 @@ header {
 @keyframes moveclouds {
   0% {margin-left: 1000px;}
   100% {margin-left: -1000px;}
+}
+
+#ground {
+  width: 110%;
+  margin-top: 300px;
+  position: relative;
+  left: -50px;
+  bottom: 0;
+  height: 160px;
+  border-radius: 50% 50% 0 0;
+  background: #19386f;
+  box-shadow: 0px -50px 50px #fff;
 }
