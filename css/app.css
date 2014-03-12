@@ -27,6 +27,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 
 body {
+  width: 100%;
   //background-color: lightskyblue; //rgb(113,49,99); //rgb(3,77,114); //#9e99c4; //#e74c3c; //#34495e; //#222;
   background: #c9dbe9;
   /*background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
@@ -35,6 +36,7 @@ body {
   font-family: 'OpenSansCondLight', "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", sans-serif;
   font-size: 22px;
   color: #fff;
+  overflow-x: hidden;
 }
 
 header {
@@ -357,7 +359,9 @@ header {
   left: -50px;
   bottom: 0;
   height: 160px;
+  padding: 45px 0 10px 0;
   border-radius: 50% 50% 0 0;
   background: #19386f;
   box-shadow: 0px -50px 50px #fff;
+  text-align: center;
 }
