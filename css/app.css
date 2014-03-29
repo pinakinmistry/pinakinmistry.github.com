@@ -226,7 +226,7 @@ header {
   background: rgba(0,0,0,.8);
   padding: 5px;
   text-align: center;
-  color: lightskyblue;
+  color: #fff;
   text-transform: capitalize;
   height: 30px;
 }
@@ -265,7 +265,7 @@ header {
 
 /*Time to animate*/
 .cloud1 {
-  left: 380px;
+  left: 380px; top: 0px;
   -webkit-animation: moveclouds 7s linear infinite;
   -moz-animation: moveclouds 7s linear infinite;
   -ms-animation: moveclouds 7s linear infinite;
@@ -287,7 +287,7 @@ header {
 }
 
 .cloud3 {
-  left: 380px;
+  left: 380px; top: 0px;
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
   -ms-transform: scale(0.8);

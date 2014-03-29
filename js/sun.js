@@ -10,7 +10,7 @@ var canvas, c, w, h,
 (function(){
   canvas = document.createElement('canvas'),
     w = canvas.width = window.innerWidth;
-  h = canvas.height = 2000;
+  h = canvas.height = 2080;
   c = canvas.getContext('2d');
   document.body.appendChild(canvas);
   
@@ -24,8 +24,8 @@ var canvas, c, w, h,
   mX = w/2;
   mY = w/2;
   
-  per = { x: w/2, y: h/2, step: 1 }
-  window.setInterval(animate,60);
+  per = { x: w/2, y: h/2, step: 1.2 }
+  window.setInterval(animate, 60);
 })();
   
   function newGradient(gradient){
@@ -48,9 +48,9 @@ var canvas, c, w, h,
 
 function animate(){
   if(!trackmouse){
-    per.x = mX = w/2 + Math.round(Math.cos(per.step)*w/2);
+    per.x = mX = w/2 + Math.round(Math.cos(per.step)*w/2) * .7;
     per.y = mY = h/2 + Math.round(Math.sin(per.step)*h/2);
-    per.step += 0.03;
+    per.step += 0.04;
     if(per.step > twoPI)
       per.step = 0;
   }
@@ -74,3 +74,4 @@ function animate(){
   );
   c.fillRect(0,0,w,h);
 }
+
