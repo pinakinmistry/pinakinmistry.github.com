@@ -228,7 +228,8 @@ header {
   text-align: center;
   color: #fff;
   text-transform: capitalize;
-  height: 30px;
+  height: 20px;
+  line-height: 20px;
 }
 
 #clouds{
