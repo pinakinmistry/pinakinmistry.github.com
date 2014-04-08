@@ -10,7 +10,7 @@ var canvas, c, w, h,
 (function(){
   canvas = document.createElement('canvas'),
     w = canvas.width = window.innerWidth;
-  h = canvas.height = 2080;
+  h = canvas.height = 2280;
   c = canvas.getContext('2d');
   document.body.appendChild(canvas);
   
