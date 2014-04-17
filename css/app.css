@@ -63,9 +63,11 @@ header {
   width: 1024px;
   position: relative;
   margin: auto;
+  padding: 0 3px;
 }
 
 .intro {
+  padding-left: 10px;
   letter-spacing: 1px;
   line-height: 36px;
   display: inline-block;
@@ -84,7 +86,7 @@ header {
 
 .stickRight {
   position: absolute;
-  top:0; right: 0;
+  top:0; right: 29px;
 }
 
 .name {
@@ -180,9 +182,9 @@ header {
 
 .iframeWrap {
   position: relative;
-  width: 334px;
+  width: 330px;
   height: 200px;
-  margin: 0 7px 7px 0;
+  margin: 0 5px 5px 0;
   float: left;
   position: relative;
   background: #9e99c4;

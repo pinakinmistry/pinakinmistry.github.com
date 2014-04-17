@@ -65,9 +65,9 @@ function animate(){
       r1: 0,
       r2: w,
       stops: [
-        { s: 0, c: "rgba("+ (h-mY) +","+ (h-mY) +","+ (h-mY) +",1)" },
-        { s: 0.06, c: "rgba("+ (h-mY) +","+ (h-mY-128) +",128,1)" },
-        { s: .2, c: "rgba(0,"+ (h-mY-128) +","+ (h-mY) +",0.5)" }
+        { s: 0, c: "rgba("+ parseInt(h-mY) +","+ parseInt(h-mY) +","+ parseInt(h-mY) +",1)" },
+        { s: 0.06, c: "rgba("+ parseInt(h-mY) +","+ parseInt(h-mY-128) +",128,1)" },
+        { s: .2, c: "rgba(0,"+ parseInt(h-mY-128) +","+ parseInt(h-mY) +",0.5)" }
         
       ]
     }
