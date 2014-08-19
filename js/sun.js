@@ -14,7 +14,7 @@ var canvas, c, w, h,
   c = canvas.getContext('2d');
   document.body.appendChild(canvas);
   
-  !resize || window.addEventListener('resize', function(e){ w = canvas.width = window.innerWidth; h = canvas.height = window.innerHeight; });
+  //!resize || window.addEventListener('resize', function(e){ w = canvas.width = window.innerWidth; h = canvas.height = window.innerHeight; });
   nomousemove || canvas.addEventListener('mousemove', function(e){
     trackmouse = true;
     mX = e.pageX-20; mY = e.pageY-20;
